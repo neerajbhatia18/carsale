@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Info</title>
+</head>
+<body>
+{% for cust in customers %}
+Customer Name : {{cust.c_name}}<br>
+Customer Mobile : {{cust.c_mobile}}<br>
+Customer Address : {{cust.c_address}}<br>
+Customer VehicleID : {{cust.v_id}}<br>
+<hr>
+{% endfor %}
+<hr color="red">
+{% for rec in records %}
+ : {{rec.m_id}}<br>   <!--what this m_id-->
+Date : {{rec.date}}<br>
+Customer Id: {{rec.c_id}}<br>
+<hr>
+{% endfor %}
+<hr color="red">
+{% for veh in vehicles %}
+Customer Name : {{veh.v_id}}<br>
+Customer Mobile : {{veh.v_id}}<br>
+Customer Address : {{veh.v_id}}<br>
+<hr>
+{% endfor %}
+
+
+</body>
+</html>
